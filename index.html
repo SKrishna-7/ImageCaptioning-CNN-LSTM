@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Image Caption</title>
+</head>
+<style>
+    body{
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+<body>
+    <div class="w-screen h-screen bg-slate-50 p-10 flex flex-row ">
+        <div class="container  w-9/12 p-2">
+            
+            <p class="l text-5xl text-slate-900 font-extrabold">Image Captioning Bot</p>
+    <div class="fp p-10">        
+<div class="flex items-center justify-center ">
+    <label for="dropzone-file" class="drop-area flex flex-col items-center justify-center w-full h-30 border-2 border-slate-300 border-dashed rounded-lg cursor-pointer 
+    bg-white
+    hover:bg-slate-100  ">
+        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+            </svg>
+            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span></p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG</p>
+        </div>
+       <form>
+            <input id="dropzone-file" type="file" class="hidden file" required />
+    </form>
+    </label>
+</div> 
+
+    <div class="disimg pt-4 flex ">     
+  
+  <img class="h-[350px] w-[450px] bg-slate-100 object-cover rounded-lg" src="./static/image-1@2x.jpg" alt="image description" id="show-img">
+
+    <div class="generate pl-10 mt-10 w-full text-center">
+        <p id="caption" class="bg-white p-3 w-full rounded text-slate-900 text-extrabold text-1xl border-[1px] border-gray-300">upload image and click generate</p>
+   
+   
+        <form id="generate-cap" >
+        <button type="submit" class="text-white focus:ring-4 focus:outline-none 
+        bg-slate-800 w-3/4
+        font-semibold rounded text-lg p-3 text-center  
+        mt-5
+        me-2 mb-2" >
+            Generate Caption
+    </button>
+    
+    </form>
+
+    </div>
+    </div>
+        </div>
+        </div>
+        
+        
+    <div class="m-10 w-[25%]">
+        <div class="w-full bg-white p-10  shadow-sm rounded-lg">
+            <h2 class="text-1xl font-bold tracking-wider text-gray-500 ">Connect with Me</h2>
+            <a href="https://github.com/SKrishna-7/SKrishna-7" class="p-2 flex items-center "><i class="fa-brands fa-square-github text-4xl pr-2 "></i><p class="font-md text-gray-900 text-md">github.com/SKrishna-7</p></a>
+    
+            <a href="https://www.linkedin.com/in/suresh-krishnan-s/" class="p-2 flex items-center"><i class="fa-brands fa-linkedin text-4xl pr-2 text-blue-900"></i><p class="font-md text-gray-900 text-md">linkedin.com/sureshkrishnan</p></a>
+           
+        </div>
+        <div class="w-full bg-white p-10 mt-5 shadow-sm rounded-lg">
+            <h2 class="text-1xl font-bold tracking-wider text-gray-500 ">About Me</h2>
+            
+        <div class="flex pt-2 w-full">
+            <img src="./static/ootyp.jpg" alt="sureshkrishna" class="rounded-full w-[50px] h-[50px] mr-3">
+        <div class="">
+            <p class="font-bold text-slate-900">Suresh Krishnan S</p>
+            <p class="text-sm">B.Tech Ariticial Intelligence</p>
+        </div>
+        </div>
+        
+          <div class="text-center">
+            <a href="" class="pr-1 text-rose-600 text-lg"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="pr-1 text-slate-900 text-lg"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="pr-1 text-blue-600 text-lg"><i class="fa-brands fa-kaggle"></i></a>
+            <a href="" class="pr-1 text-black text-lg"><i class="fa-brands fa-github"></i></a>
+          </div>
+    </div>
+    </div>
+    </div>
+   
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
